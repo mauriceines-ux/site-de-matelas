@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BULTEX-LIKE – Matelas, sommiers et literie haut de gamme</title>
+<meta name="description" content="Matelas et sommiers fabriqués en France. Trouvez le matelas qui change vos nuits.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p class="promo">Livraison offerte dès 500 € et 100 nuits pour tester votre matelas</p>
+
+<header class="header">
+  <a class="logo" href="#accueil">BULTEX<span>-LIKE</span></a>
+  <nav id="nav" aria-label="Navigation principale">
+    <a href="#catalogue">Matelas</a>
+    <a href="#sommiers">Sommiers</a>
+    <a href="#technologies">Nos technologies</a>
+    <a href="#quiz">Le guide / Quiz</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="icon-btn" id="cartBtn" aria-label="Ouvrir le panier">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 12H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+    <span id="cartCount" hidden>0</span>
+  </button>
+  <button class="icon-btn burger" id="burger" aria-label="Menu" aria-expanded="false">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+</header>
+
+<main>
+
+  <!-- ACCUEIL -->
+  <section class="view active" id="accueil">
+    <div class="hero" style="--hero:url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1800&q=80')">
+      <div class="wrap">
+        <h1>Le réveil qui change tout</h1>
+        <p>Nano pour épouser chaque courbe, Spire pour soutenir chaque nuit. Des matelas conçus et assemblés en France.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="#catalogue">Découvrir nos matelas</a>
+          <a class="btn btn-ghost" href="#quiz">Trouver mon matelas</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap section">
+      <h2 class="title">Un confort pensé pour votre corps</h2>
+      <div class="usp">
+        <div>
+          <svg viewBox="0 0 24 24"><path d="M3 15c3-6 6-6 9 0s6 6 9 0"/></svg>
+          <h3>Soutien morphologique</h3>
+          <p>Des zones de confort différenciées suivent la courbure de votre dos, des épaules jusqu’au bassin.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>
+          <h3>Fabrication française</h3>
+          <p>Chaque matelas est assemblé dans nos ateliers, avec des matières certifiées et une garantie de 10 ans.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24"><rect x="3" y="8" width="8" height="9" rx="2"/><rect x="13" y="8" width="8" height="9" rx="2"/></svg>
+          <h3>Indépendance de couchage</h3>
+          <p>Les mouvements de l’un ne dérangent plus l’autre : chaque côté du lit réagit séparément.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="band">
+      <div class="wrap section">
+        <h2 class="title">Nos best-sellers</h2>
+        <div class="grid" id="featured"></div>
+      </div>
+    </div>
+
+    <div class="wrap section">
+      <div class="cta">
+        <div>
+          <h2>Quel matelas pour votre dos ?</h2>
+          <p>Répondez à 3 questions, nous vous recommandons le modèle adapté.</p>
+        </div>
+        <a class="btn btn-light" href="#quiz">Faire le test</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOGUE -->
+  <section class="view" id="catalogue">
+    <div class="page-head">
+      <div class="wrap">
+        <h1>Nos matelas</h1>
+        <p>Filtrez par soutien et par technologie pour affiner votre sélection.</p>
+        <div id="filters"></div>
+      </div>
+    </div>
+    <div class="wrap section">
+      <p class="count" id="count"></p>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIES -->
+  <section class="view" id="technologies">
+    <div class="page-head">
+      <div class="wrap">
+        <h1>Nos technologies</h1>
+        <p>Trois savoir-faire qui expliquent pourquoi on dort mieux sur un matelas BULTEX-LIKE.</p>
+      </div>
+    </div>
+    <div class="wrap section tech">
+      <article>
+        <h2>Nano</h2>
+        <p>Une mousse nano-alvéolée qui réagit à la pression et à la chaleur du corps. Elle épouse les épaules et le bassin sans s’affaisser, puis reprend sa forme instantanément.</p>
+      </article>
+      <article>
+        <h2>Spire</h2>
+        <p>Des ressorts ensachés indépendants, répartis en sept zones de confort. Chaque spire travaille seule : vous ne sentez plus les mouvements de votre partenaire.</p>
+      </article>
+      <article>
+        <h2>Latex naturel</h2>
+        <p>Un latex perforé qui laisse circuler l’air. Élasticité immédiate, fraîcheur toute la nuit et durabilité supérieure à quinze ans.</p>
+      </article>
+      <a class="btn btn-primary" href="#catalogue" style="justify-self:start">Voir les matelas</a>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="view" id="quiz">
+    <div class="page-head">
+      <div class="wrap">
+        <h1>Trouvez votre matelas</h1>
+        <p>Trois questions, une recommandation sur mesure.</p>
+      </div>
+    </div>
+    <div class="wrap section">
+      <div class="quiz" id="quizBox"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="view" id="contact">
+    <div class="page-head">
+      <div class="wrap">
+        <h1>Contact</h1>
+        <p>Une question sur un modèle, une livraison ou un essai ? Notre équipe répond du lundi au samedi.</p>
+      </div>
+    </div>
+    <div class="wrap section contact">
+      <div>
+        <h2>Parlons de vos nuits</h2>
+        <p>contact@bultex-like.fr<br>01 23 45 67 89<br>Lundi–samedi, 9 h–19 h</p>
+      </div>
+      <form id="contactForm">
+        <label>Nom<input type="text" required autocomplete="name"></label>
+        <label>E-mail<input type="email" required autocomplete="email"></label>
+        <label>Message<textarea required></textarea></label>
+        <button class="btn btn-primary" type="submit">Envoyer le message</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="logo" href="#accueil">BULTEX<span>-LIKE</span></a>
+      <p style="margin-top:12px;max-width:34ch">Matelas et sommiers fabriqués en France, pour des nuits qui réparent.</p>
+    </div>
+    <div>
+      <h3>Boutique</h3>
+      <a href="#catalogue">Matelas</a>
+      <a href="#sommiers">Sommiers</a>
+      <a href="#technologies">Nos technologies</a>
+    </div>
+    <div>
+      <h3>Aide</h3>
+      <a href="#quiz">Le guide / Quiz</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <p class="wrap legal">Site de démonstration fictif, inspiré de l’univers de la literie haut de gamme.</p>
+</footer>
+
+<div id="overlay"></div>
+<aside class="cart" id="cart" aria-label="Panier" aria-hidden="true">
+  <div class="cart-head">
+    <h2>Votre panier</h2>
+    <button class="icon-btn" id="cartClose" aria-label="Fermer le panier">✕</button>
+  </div>
+  <div id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="total"><span>Total</span><strong id="cartTotal">0 €</strong></div>
+    <button class="btn btn-primary" id="checkout">Commander</button>
+  </div>
+</aside>
+
+<dialog id="modal"></dialog>
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
